@@ -15,8 +15,13 @@ int main() {
 
     vector<Color> colors;
     // colors.push_back(myColor);
-    for (int i = 0; i < 10; ++i) {
-        colors.push_back(Color(i * 25, i * 25, i * 25));
+
+    // Generate a random number of colors between 25 and 50
+    int numColors = rand() % 25 + 25; 
+
+    for (int i = 0; i < numColors; ++i) {
+        // Generate random RGB values between 0 and 255
+        colors.push_back(Color(rand() % 256, rand() % 256, rand() % 256));  
     }
 
     for (int i = 0; i < colors.size(); ++i) {
