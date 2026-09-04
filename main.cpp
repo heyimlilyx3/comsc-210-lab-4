@@ -26,8 +26,10 @@ int main() {
         colors.push_back(Color(rand() % 256, rand() % 256, rand() % 256));  
     }
 
+    cout << "Color#\tRed\tGreen\tBlue" << endl;
+    cout << "------\t---\t-----\t----" << endl;
     for (int i = 0; i < colors.size(); ++i) {
-        cout << "Color " << i << ": (" << colors[i].red << ", " << colors[i].green << ", " << colors[i].blue << ")" << endl;
+        cout<< i << "\t" << colors[i].red << "\t" << colors[i].green << "\t" << colors[i].blue << endl;
     }
 
     return 0;
